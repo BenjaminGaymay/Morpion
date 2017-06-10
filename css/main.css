@@ -1,0 +1,51 @@
+body, html, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  margin: 5% auto;
+  border-collapse: collapse;
+}
+
+td {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  border: solid black 1px;
+  font-size: 150px;
+  text-align: center;
+}
+
+#state {
+  text-align: center;
+  font-size: 50px;
+}
+
+#chooseMenu {
+  margin-top: 10%;
+}
+
+.button {
+  cursor: pointer;
+}
+
+#ai, #player {
+  text-align: center;
+  font-size: 50px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin: 5px 20% 0 20%;
+}
+
+#returnMenu {
+  cursor: pointer;
+  display: inline;
+  font-size: 25px;
+  margin-left: 3%;
+  margin-top: -1%;
+}

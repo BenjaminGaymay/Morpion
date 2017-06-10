@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Morpion</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+
+	<body onload="startLoad()">
+		<h1>Morpion</h1>
+
+		<div id='gameTable'>
+			<table id='array'>
+				<tr>
+					<td class='morpionCases' id='1.1' onclick="doLoop(this.id)"></td>
+					<td class='morpionCases' id='1.2' onclick="doLoop(this.id)"></td>
+					<td class='morpionCases' id='1.3' onclick="doLoop(this.id)"></td>
+				</tr>
+				<tr>
+					<td class='morpionCases' id='2.1' onclick="doLoop(this.id)"></td>
+					<td class='morpionCases' id='2.2' onclick="doLoop(this.id)"></td>
+					<td class='morpionCases' id='2.3' onclick="doLoop(this.id)"></td>
+				</tr>
+				<tr>
+					<td class='morpionCases' id='3.1' onclick="doLoop(this.id)"></td>
+					<td class='morpionCases' id='3.2' onclick="doLoop(this.id)"></td>
+					<td class='morpionCases' id='3.3' onclick="doLoop(this.id)"></td>
+				</tr>
+			</table>
+			<p id='state'>
+				Player : 'X' turn
+			</p>
+		</div>
+
+		<div id='chooseMenu'>
+			<p id='ai' class='button' onclick="chooseGameMode(this.id)">
+				Player VS AI
+			</p>
+			<p id='player' class='button' onclick="chooseGameMode(this.id)">
+				Player VS Player
+			</p>
+		</div>
+		<p id='returnMenu' class='button' onclick="chooseGameMode(this.id)">
+			Return to menu
+		</p>
+		<script src="js/main.js"></script>
+	</body>
+
+</html>
